@@ -14,7 +14,7 @@ router.post('/', function(req, res, next) {
     
 });
 
-router.uptade('/', function(req, res, next) {
+router.put('/', function(req, res, next) {
     Controller.create(req, res);
     
 });
