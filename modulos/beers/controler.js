@@ -22,7 +22,7 @@ var Model = require('./model');
               }
               else{
                 console.log('Cerveja Inserida: ', data);
-                msg =  data;
+                msg = data;
               }
               res.json(msg);
             });      
