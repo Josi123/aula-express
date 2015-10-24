@@ -47,6 +47,26 @@ var Model = require('./model');
             })
         
     
+    },
+      ,get: function(req, res){
+        
+            var query = {} ;
+            var msg = '';
+            Model.findOne(query, function (err, data){
+                if(err){
+                    console.log('Erro', err);
+                    msg =  err;
+                }
+                else{
+                    console.log('Listagem', data);
+                    msg = data;
+                }
+                res.end(msg);
+                //para finalizar o processo de node.js
+                process.exit(0);
+            })
+        
+    
     }
     ,update: function(req, res){ 
         var query = {} ;
