@@ -102,7 +102,7 @@ var Model = require('./model');
       
     ,delete: function(req, res){ 
         var msg = '';
-        var query = {name: /skol/i};
+        var query = {} ;
     
         Model.remove(query, function(err, data){
             if(err){ 
